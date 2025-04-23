@@ -1,13 +1,30 @@
-<!--main page w/ links @ bottom-->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+    <title>Education/Certifications/Awards</title>
     <link rel="icon" type="image/png" href="../images/tablogo.png">
     <link rel="stylesheet" href="../bootstrap.min.css">
-    
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            max-width: 35rem;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -28,37 +45,86 @@
                 <a class="nav-link" href="aboutme.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="education.html">Education/Certifications/Awards</a>
+                <a class="nav-link active" href="education.html">Education/Certifications/Awards</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    <!--education/certifications-->
-    <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
-        <div class="card-header">Current Education</div>
-        <div class="card-body">
-          <h4 class="card-title">University of Washington Tacoma</h4>
-          <p class="card-text">Bachelor of Science in Computer Science and Systems</p>
-          <li class="card-text">GPA: 3.97</li>
-          <li class="card-text">National Society for Leadership and Success (NSLS)</li>
-          <li class="card-text">Upsilon Pi Epsilon</li>
-          <li class="card-text">Expected Graduation: June 2025</li>
+    </nav>
+    
+    <div class="card-container">
+        <!-- Education Cards (Left) -->
+        <div class="column">
+            <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
+                <div class="card-header">Current Education</div>
+                <div class="card-body">
+                  <h4 class="card-title">University of Washington Tacoma</h4>
+                  <p class="card-text">Bachelor of Science in Computer Science and Systems</p>
+                  <li class="card-text">GPA: 3.97</li>
+                  <li class="card-text">National Society for Leadership and Success (NSLS)</li>
+                  <li class="card-text">Upsilon Pi Epsilon</li>
+                  <li class="card-text">Expected Graduation: June 2025</li>
+                </div>
+            </div>
+            <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
+                <div class="card-header">Past Education</div>
+                <div class="card-body">
+                  <h4 class="card-title">Pierce College</h4>
+                  <p class="card-text">Associate of Arts - Direct Transfer Agreement</p>
+                  <li class="card-text">GPA: 3.96</li>
+                  <li class="card-text">Graduated with Honors (June 2022) </li>
+        
+                  <h4 class="card-title">Governor John Rogers High School</h4>
+                  <p class="card-text">High School Diploma</p>
+                  <li class="card-text">Swim Team (Varsity 2019-2022)</li>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
-        <div class="card-header"> Past Education</div>
-        <div class="card-body">
-          <h4 class="card-title">Pierce College</h4>
-          <p class="card-text">Associate of Arts - Direct Transfer Agreement</p>
-          <li class="card-text">GPA: 3.96</li>
-          <li class="card-text">Graduated with Honors (June 2022) </li>
 
-          <h4 class="card-title">Governor John Rogers High School</h4>
-          <p class="card-text">High School Diploma</p>
-          <li class="card-text">Swim Team (Varsity 2019-2022)</li>
+        <!-- Certifications Cards (Middle) -->
+        <div class="column">
+            <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
+                <div class="card-header">Certifications</div>
+                <div class="card-body">
+                  <li class="card-text">Microsoft Office Word 2016 Certified (2019) </li>
+                  <li class="card-text">Microsoft Office PowerPoint 2016 Certified (2019) </li>
+                  <li class="card-text">NSLS Foundations of Leadership (2024) </li>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Awards Cards (Right) -->
+        <div class="column">
+            <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
+                <div class="card-header">Academic Awards/Honors</div>
+                <div class="card-body">
+                  <h4 class="card-title">UW Tacoma</h4>
+                  <li class="card-text">Dean's List (All Quarters enrolled Full-time x8, 2022-2025)</li>
+                  <li class="card-text">National Society for Leadership and Success Member (since 2024)</li>
+                  <li class="card-text">Upsilon Pi Epsilon member (since 2024) </li>
+                  <li class="card-text">Freshman Merit Scholarship Recipient (2022)</li>
+
+                  <h4 class="card-title">Pierce College</h4>
+                  <li class="card-text">Chancellor's List (x3)</li>
+                  <li class="card-text">President's List (x1)</li>
+                  <li class="card-text">Dean's List (x2) </li>
+
+                  <h4 class="card-title">Rogers High School</h4>
+                  <li class="card-text">Washington State Principals Scholars Program Award for Academic Excellence</li>
+                  <li class="card-text">Washington State Honors Award (top 10% GPA in the class of 2022)</li>
+                  <li class="card-text">Outstanding Scholastic Award </li>
+                  <li class="card-text">Varsity Award (x4) </li>
+                </div>
+            </div>
+            <div class="card text-white bg-primary" style="max-width: 35rem; margin-top: 20px; margin-left: 20px">
+                <div class="card-header">Competitions & Recognition</div>
+                <div class="card-body">
+                  <li class="card-text">2nd Place, UW Puget Sound Programming Competition (2025)</li>
+                  <li class="card-text">10th Place, UW Puget Sound Programming Competition (2024)</li>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <footer style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
     <p>
